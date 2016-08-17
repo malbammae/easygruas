@@ -1961,7 +1961,7 @@ li {
 }
 .footer-widget .link-list a {
   color: #62666A;
-  text-transform: capitalize;
+  text-transform: inherit;
   line-height: 39px;
 }
 .footer-widget .link-list a:hover {
