@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Easy Gruas SPA</title>
+  <!-- viewport meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- styles -->
+  <!-- helpers -->
+  <link rel="stylesheet" href="/static/plugins/bootstrap/css/bootstrap.min.css">
+  <!-- fontawesome css -->
+  <link rel="stylesheet" href="/static/plugins/font-awesome/css/font-awesome.min.css">
+  <!-- strock gap icons -->
+  <link rel="stylesheet" href="/static/plugins/Stroke-Gap-Icons-Webfont/style.css">
+  <!-- revolution slider css -->
+  <link rel="stylesheet" href="/static/plugins/revolution/css/settings.css">
+  <link rel="stylesheet" href="/static/plugins/revolution/css/layers.css">
+  <link rel="stylesheet" href="/static/plugins/revolution/css/navigation.css">
+  <!-- flaticon css -->
+  <link rel="stylesheet" href="/static/plugins/flaticon/flaticon.css">
+  <!-- jQuery ui css -->
+  <link href="/static/plugins/jquery-ui-1.11.4/jquery-ui.css" rel="stylesheet">
+  <!-- owl carousel css -->
+  <link rel="stylesheet" href="/static/plugins/owl.carousel-2/assets/owl.carousel.css">
+  <link rel="stylesheet" href="/static/plugins/owl.carousel-2/assets/owl.theme.default.min.css">
+  <!-- animate css -->
+  <link rel="stylesheet" href="/static/plugins/animate.min.css">
+  <!-- fancybox -->
+  <link rel="stylesheet" href="/static/plugins/fancyapps-fancyBox/source/jquery.fancybox.css">
+
+
+  <!-- master stylesheet -->
+  <link rel="stylesheet" href="/static/css/style.css">
+  <!-- responsive stylesheet -->
+  <link rel="stylesheet" href="/static/css/responsive.css">
+    <link rel="stylesheet" href="/static/owl-carousel/owl.carousel.css">
+
+
+
+
+</head>
+<body>
+
+<header id="header2" class="clearfix stricky">
+  <div class="logo pull-left">
+    <a href="layout.html">
+      <img src="/static/fotos/logo.png" alt="">
+    </a>
+  </div>
+  <div class="nav-holder pull-right">
+    <div class="nav-header">
+      <button><i class="fa fa-bars"></i></button>
+    </div>
+    <div class="nav-footer">
+      <ul class="nav">
+        <li >
+          <a onclick="goto('inicio')">Inicio</a>
+
+        </li>
+        <li >
+          <a onclick="goto('empresa')">Empresa</a>
+
+        </li>
+        <li>
+          <a onclick="goto('servicios')">Servicios</a>
+
+        </li>
+
+
+        <li><a onclick="goto('contactanos')">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+
+
+<section id ="inicio"  class="text-rotator-banner thm-banner-wrapper" style="background-image: url(static/fotos/3.jpeg);">
+  <div class="thm-container">
+    <div class="col-lg-6 col-md-8 pull-right caption-wrapper">
+      <div class="caption-h1">
+
+        <div class="type-wrap">
+             <p style="   font-style: italic; text-shadow: 2px 0 0 #000, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;">Easy Gruas</p>
+          <div class="typed-strings" >
+
+
+            <p >Remolque de vehículos </p>
+              <p >Asistencia en ruta</p>
+              <p >Traslado de maquinaria liviana</p>
+
+
+
+
+          </div>
+          <span class="typed"></span>
+        </div><br>
+      </div>
+      <span class="horiz-border"></span>
+      <div class="caption-p">
+        Coordinando los mejores vehículos de remolque, personal especializado y la tecnología de la información y comunicación  para un eficiente servicio en la ruta.
+      </div>
+      <a onclick="goto('contactanos')" class="thm-btn">Contactanos <i class="fa fa-arrow-right"></i></a> &emsp;
+      <a onclick="goto('servicios')" class="thm-btn transparent">Ver servicios <i class="fa fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+
+<section id="empresa" class="welcome-text">
+  <div class="thm-container">
+    <div class="title-box text-right">
+      <h3>Inversiones  <br>Easy Gruas SpA</h3>
+    </div>
+    <div class="text-box">
+      <p>es una Sociedad de inversiones, que se dedica al rubro de remolque de vehículos de cualquier tonelaje y a la mantención y reparación de éstos. Su misión es ejecutar, con los medios adecuados, el traslado de todo tipo de vehículos no operacionales que se encuentren detenidos por efectos de cualquier tipo de incidente o accidente, en las vías públicas o concesionadas de la ciudad de Santiago, haciendo uso de las tecnologías de la información y comunicación, como elemento de enlace con el conductor del vehículo siniestrado, el medio de remolque seleccionado y la central de comunicaciones de Easy Gruas SpA, asegurando puntualidad y seguridad en el traslado</p>
+    </div>
+  </div>
+</section>
+
+<section id="servicios"  class="faq-section sec-padding">
+  <div class="thm-container">
+    <div class="row">
+      <div class="col-lg-8 col-md-8">
+        <div class="sec-title">
+          <h2><span>Servicios de Easy Gruas SPA</span></h2>
+        </div>
+        <div class="accrodion-grp" data-grp-name="faq-accrodion">
+          <div class="accrodion active">
+
+            <div class="accrodion-content" id="remolque">
+              <div class="img-caption">
+                <div class="img-box">
+                  <img src="/static/fotos/ruta.JPG" alt="Awesome Image"/>
+                </div>
+                <div class="content-box">
+                  <h4>Remolque de vehículos livianos, medianos y pesados.</h4>
+                  <p>Haciendo uso de vehículos adecuados para cada uno de los casos, evaluado por una patrulla que emite el informe correspondiente para la asignación de los medios de acuerdo a volumen, peso y ubicación.</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accrodion active" id="asistencia">
+
+            <div class="accrodion-content">
+              <div class="img-caption">
+                <div class="img-box">
+                  <img src="/static/fotos/vol.JPG" alt="Awesome Image"/>
+                </div>
+                <div class="content-box">
+                  <h4>Asistencia en ruta</h4>
+                  <p>Contamos con los medios y personal adecuados para materializar una rápida y eficiente asistencia en ruta ante casos de fallas mecánicas de nivel primario.</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accrodion active" id="transalado">
+
+            <div class="accrodion-content">
+              <div class="img-caption">
+                <div class="img-box">
+                  <img src="/static/fotos/maquinaria.JPG" alt="Awesome Image"/>
+                </div>
+                <div class="content-box">
+                  <h4>Traslado de maquinaria liviana</h4>
+                  <p>A cualquier destino dentro del País, con medios terrestres adecuados, con conductores de experiencia con tarifas convenientes y considerando además seguro de carga.</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accrodion">
+
+            <div class="accrodion-content">
+              <div class="img-caption">
+                <div class="img-box">
+                  <img src="/static/images/accrodion/1.jpg" alt="Awesome Image"/>
+                </div>
+                <div class="content-box">
+                  <h4>Capacitación permanente de nuestro personal</h4>
+                  <p></p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4">
+        <div class="sec-title">
+          <h2><span>Contactanos</span></h2>
+        </div>
+        <div class="view-location">
+          <iframe
+  width="300"
+  height="300"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?q=irarrazaval+5185+ñuñoa+chile&key=AIzaSyDm4lJ6XOatxJt_L8Y1T2STBSAkLx6EboA" allowfullscreen>
+</iframe>
+
+
+              </div>
+        <br>
+              <div class="text-box">
+                <p><b>  <i class="fa fa-map-marker"></i> Ubicación.</b> <br> Avenida Irarrázaval 5185 oficina 702</p>
+              </div>
+
+
+                <p> <i class="fa fa-phone"></i> +56 9 98739110</p>
+        <p> <i class="fa fa-phone"></i> +56 2 32705814</p>
+
+
+                <p><i class="fa fa-envelope-o"></i> gclaretebal@easygruas.cl</p>
+
+
+              <div class="text-box">
+                <p> <i class="icon icon-Timer"></i> Lunes  - Domingo : 24/7</p>
+              </div>
+
+
+          <a href="https://www.google.cl/maps/place/Irarrázaval+5185,+Ñuñoa,+Región+Metropolitana/@-33.4543027,-70.5771567,18z/data=!4m13!1m7!3m6!1s0x9662cfb56daaf5b5:0x590d68484855bd20!2zSXJhcnLDoXphdmFsIDUxODUsIMORdcOxb2EsIFJlZ2nDs24gTWV0cm9wb2xpdGFuYQ!3b1!8m2!3d-33.4542467!4d-70.5760608!3m4!1s0x9662cfb56daaf5b5:0x590d68484855bd20!8m2!3d-33.4542467!4d-70.5760608">Abrir en Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="featured-services">
+  <div class="thm-container">
+    <div class="row">
+      <div class="col-md-8 featured-service-box">
+        <div class="col-md-6 col-sm-6">
+          <div class="single-featured-service">
+            <header>
+              <div class="icon-box">
+                <i class="flaticon-commercial15"></i>
+              </div>
+              <div class="title-box">
+                <h3><span>Eficiencia en los servicios</span></h3>
+              </div>
+            </header>
+            <article>
+              <p>Con tecnología, logramos una adecuada selección de medios de remolque,
+                  que asegura el menor tiempo de respuesta al cliente y el menor costo por cada trayecto.</p>
+            </article>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="single-featured-service">
+            <header>
+              <div class="icon-box">
+                <i class="flaticon-woman93"></i>
+              </div>
+              <div class="title-box">
+                <h3><span>Disponibilidad las 24 Horas</span></h3>
+              </div>
+            </header>
+            <article>
+              <p>Contamos con personal de turno y medios de remolque disponibles durante las 24 horas del
+
+día, los 7 días de la semana, asegurando una cobertura integral de tiempo completo para
+
+nuestros clientes.</p>
+            </article>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="single-featured-service">
+            <header>
+              <div class="icon-box">
+                <i class="flaticon-airplane68"></i>
+              </div>
+              <div class="title-box">
+                <h3><span>Capacitacion permanente del personal</span></h3>
+              </div>
+            </header>
+            <article>
+              <p>La eficiencia de los servicios ofrecidos por nuestra empresa, está basada en
+
+valores, principios y políticas entre las cuales se consideran la permanente
+
+capacitación de nuestro personal en diversas técnicas de rescate y asistencia de
+
+vehículos siniestrados.</p>
+            </article>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="single-featured-service">
+            <header>
+              <div class="icon-box">
+                <i class="flaticon-delivery18"></i>
+              </div>
+              <div class="title-box">
+                <h3><span>Carga segura</span><br></h3>
+              </div>
+            </header>
+            <article>
+              <p>Hemos implementado el sistema de seguro para todas nuestras cargas especiales, de tal
+
+modo de brindar una cobertura contra daños causados durante el traslado y la manipulación
+
+de cada una de este tipo de servicios.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 hidden-sm">
+        <div class="left-full-img">
+
+            <img src="/static/fotos/fotos/DSC01666.JPG" id="photo0" style="width :675px" alt="Awesome Image">
+          <img src="/static/fotos/fotos/IMG_6867.JPG" id="photo1" style="display:none;width :675px" alt="Awesome Image">
+        <img src="/static/fotos/fotos/IMG_7252.JPG" id="photo2" style="display:none;width :675px" alt="Awesome Image">
+            <img src="/static/fotos/fotos/IMG_7338.JPG" id="photo3" style="display:none;width :675px" alt="Awesome Image">
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="call-to-action" id="nosotros">
+  <div class="thm-container">
+    <div class="row">
+      <div class="col-md-7 hidden-xs hidden-sm">
+        <div class="right-full-image">
+          <img src="/static/fotos/1.jpeg" style="width :675px" alt="Awesome Image"/>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="call-to-action-text">
+          <h3>Inversiones  <br>Easy Gruas SpA</h3>
+          <p>es una Sociedad de inversiones, que se dedica al rubro de remolque de vehículos de cualquier tonelaje y a la mantención y reparación de éstos. Su misión es ejecutar, con los medios adecuados, el traslado de todo tipo de vehículos no operacionales que se encuentren detenidos por efectos de cualquier tipo de incidente o accidente, en las vías públicas o concesionadas de la ciudad de Santiago, haciendo uso de las tecnologías de la información y comunicación, como elemento de enlace con el conductor del vehículo siniestrado, el medio de remolque seleccionado y la central de comunicaciones de Easy Gruas SpA, asegurando puntualidad y seguridad en el traslado.
+          </p>
+          <a href="#" class="thm-btn">Ver servicios<i class="fa fa-arrow-circle-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section class="request-qoute sec-padding" id ="contactanos">
+  <div class="thm-container">
+    <div class="row">
+
+      <div class="col-md-6">
+        <div class="sec-title">
+          <h2><span>Contactanos</span></h2>
+        </div>
+        <form action="includes/sendemail.php" class="contact-form">
+          <div class="form-grp full">
+            <input type="text" name="name" placeholder="Nombre">
+          </div>
+          <div class="form-grp full">
+            <input type="text" name="email" placeholder="Email*">
+          </div>
+
+            <div class="form-grp full">
+              <input type="text" name="subject" placeholder="Asunto">
+            </div>
+
+          <div class="form-grp">
+            <textarea name="message" placeholder="Mensaje"></textarea>
+          </div>
+          <button type="submit" class="thm-btn">Enviar Correo <i class="fa fa-arrow-circle-right"></i></button>
+        </form>
+      </div>
+        <div class="col-md-6">
+
+            <iframe
+  width="500"
+  height="500"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?q=irarrazaval+5185+ñuñoa+chile&key=AIzaSyDm4lJ6XOatxJt_L8Y1T2STBSAkLx6EboA" allowfullscreen>
+</iframe>
+            </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer id="footer" class="sec-padding">
+  <div class="thm-container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 footer-widget">
+        <div class="about-widget">
+          <a href="#"><img src="/static/fotos/logo.png" alt="Awesome Image"/></a>
+          <p>Sociedad de inversiones, que se dedica al rubro de remolque de vehículos.</p>
+          <a href="#">Leer Más <i class="fa fa-angle-double-right"></i></a>
+          <ul class="social">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 footer-widget">
+        <div class="pl-30">
+          <div class="title">
+            <h3><span>Nuestros Servicios</span></h3>
+          </div>
+          <ul class="link-list">
+            <li><a onclick="goto('remolque')">Remolque de vehículos</a></li>
+            <li><a onclick="goto('asistencia')">Asistencia en ruta</a></li>
+            <li><a onclick="goto('tansalado')">Traslado de maquinaria liviana</a></li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6 footer-widget">
+        <div class="title">
+          <h3><span>Secciones</span></h3>
+        </div>
+        <ul class="link-list">
+          <li><a onclick="goto('inicio')">Inicio</a></li>
+          <li><a onclick="goto('servicios')">Servicios</a></li>
+          <li><a onclick="goto('nosotros')">Nosotros</a></li>
+          <li><a onclick="goto('contactanos')">Contactanos</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 col-sm-6 footer-widget">
+        <div class="title">
+          <h3><span>Información</span></h3>
+        </div>
+        <ul class="contact-infos">
+          <li>
+            <div class="icon-box">
+              <i class="fa fa-map-marker"></i>
+            </div>
+            <div class="text-box">
+              <p><b>Ubicación.</b> <br> Avenida Irarrázaval 5185 oficina 702</p>
+            </div>
+          </li>
+          <li>
+            <div class="icon-box">
+              <i class="fa fa-phone"></i>
+            </div>
+            <div class="text-box">
+              <p>+56 2 232705814</p>
+            </div>
+          </li>
+          <li>
+            <div class="icon-box">
+              <i class="fa fa-envelope-o"></i>
+            </div>
+            <div class="text-box">
+              <p>gclaretebal@easygruas.cl</p>
+            </div>
+          </li>
+          <li>
+            <div class="icon-box">
+              <i class="icon icon-Timer"></i>
+            </div>
+            <div class="text-box">
+              <p>Lunes  - Domingo : 24/7</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<section class="bottom-bar">
+  <div class="thm-container clearfix">
+    <div class="pull-left">
+      <p>Copyright © Easy Gruas 2016.</p>
+    </div>
+    <div class="pull-right">
+      <p>Created by: mmae.cl</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- jQuery js -->
+<script src="/static/plugins/jquery/jquery-1.11.3.min.js"></script>
+<!-- bootstrap js -->
+<script src="/static/plugins/bootstrap/js/bootstrap.min.js"></script>
+<!-- jQuery ui js -->
+<script src="/static/plugins/jquery-ui-1.11.4/jquery-ui.js"></script>
+<!-- owl carousel js -->
+<script src="/static/plugins/owl.carousel-2/owl.carousel.min.js"></script>
+<!-- jQuery appear -->
+<script src="/static/plugins/jquery-appear/jquery.appear.js"></script>
+<!-- jQuery countTo -->
+<script src="/static/plugins/jquery-countTo/jquery.countTo.js"></script>
+<!-- jQuery validation -->
+<script src="/static/plugins/jquery-validation/dist/jquery.validate.min.js"></script>
+
+<!-- gmap.js -->
+<script src="/static/plugins/gmap.js"></script>
+<!-- mixit up -->
+<script src="/static/plugins/jquery.mixitup.min.js"></script>
+
+<!-- revolution slider js -->
+<script src="/static/plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="/static/plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script src="/static/plugins/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script src="/static/plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+<script src="/static/plugins/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="/static/plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="/static/plugins/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script src="/static/plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="/static/plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="/static/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="/static/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
+<script src="/static/owl-carousel/owl.carousel.js"></script>
+
+<!-- fancy box -->
+<script src="/static/plugins/fancyapps-fancyBox/source/jquery.fancybox.pack.js"></script>
+<!-- type script -->
+<script src="/static/plugins/typed.js-master/dist/typed.min.js"></script>
+
+<!-- theme custom js  -->
+<script src="/static/js/main.js"></script>
+
+
+<script>
+
+
+    goto = function(id) {
+        var offset = -65; //Offset of 20px
+
+        $('html, body').animate({
+            scrollTop: $("#" + id).offset().top + offset
+        }, 2000);
+
+    }
+
+
+</script>
+
+<script>
+
+
+
+
+var ixx=0;
+        function changeImage()
+{
+
+    $("#photo"+ixx).hide('slow');
+    ixx=ixx+1;
+     ixx=ixx%4
+    $("#photo"+ixx).show('slow');
+
+    setTimeout("changeImage()", 8000);
+}
+
+
+
+changeImage()
+
+
+
+
+</script>
+
+</body>
+</html>
