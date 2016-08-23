@@ -209,7 +209,7 @@
               </div>
 
 
-  
+
         <p> <i class="fa fa-phone"></i> +56 2 32705814</p>
 
 
@@ -314,7 +314,7 @@ de cada una de este tipo de servicios.</p>
 
             <img src="/static/fotos/fotos/DSC01666.JPG" id="photo0" style="width :675px" alt="Awesome Image">
           <img src="/static/fotos/fotos/IMG_6867.JPG" id="photo1" style="display:none;width :675px" alt="Awesome Image">
-        <img src="/static/fotos/fotos/IMG_7252.JPG" id="photo2" style="display:none;width :675px" alt="Awesome Image">
+        <img src="/static/fotos/fotos/IMG_7252.JPG" id="photo2" style="display:none;height:505px" alt="Awesome Image">
             <img src="/static/fotos/fotos/IMG_7338.JPG" id="photo3" style="display:none;width :675px" alt="Awesome Image">
 
 
@@ -357,24 +357,37 @@ de cada una de este tipo de servicios.</p>
         <div class="sec-title">
           <h2><span>Contactanos</span></h2>
         </div>
-        <form action="includes/sendemail.php" class="contact-form">
+
+         <div  id="ContactForm2" class="contact-form" style="display:none">
+<div class="form-grp full">
+              <h4> Correo enviado</h4>
+            </div>
+
+ </div>
+
+        <div  id="ContactForm" class="contact-form">
           <div class="form-grp full">
-            <input type="text" name="name" placeholder="Nombre">
+            <input type="text" id="name" placeholder="Nombre">
           </div>
           <div class="form-grp full">
-            <input type="text" name="email" placeholder="Email*">
+            <input type="text" id="email" placeholder="Email*">
           </div>
 
             <div class="form-grp full">
-              <input type="text" name="subject" placeholder="Asunto">
+              <input type="text" id="subject" placeholder="Asunto">
             </div>
 
           <div class="form-grp">
-            <textarea name="message" placeholder="Mensaje"></textarea>
+            <textarea id="message" placeholder="Mensaje"></textarea>
           </div>
-          <button type="submit" class="thm-btn">Enviar Correo <i class="fa fa-arrow-circle-right"></i></button>
-        </form>
+          <button type="submit" id="enviar" class="thm-btn">Enviar Correo <i class="fa fa-arrow-circle-right"></i></button>
+        </div>
       </div>
+
+
+
+
+
         <div class="col-md-6">
 
             <iframe
@@ -563,6 +576,22 @@ var ixx=0;
 
 
 changeImage()
+
+$( "#enviar" ).click(function() {
+  nombre=$("#name").val()
+  email=$("#email").val()
+  asunto=$("#subject").val()
+  texto=$("#message").val()+"\n Nombre: "+nombre
+ data={email:email,text:texto,asunto:asunto}
+$("#ContactForm").hide('slow')
+$("#ContactForm2").show('slow')
+
+
+$.post( "http://api.easygruas.cl/",data, function( data ) {
+ console.log(data)
+});
+
+});
 
 
 
