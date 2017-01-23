@@ -1017,15 +1017,18 @@ li {
           transition: all .3s ease;
 }
 #header2 .nav-holder .nav-footer ul.nav > li:last-child > a {
-  padding-right: 0;
+  padding-right: 14px;
 }
 #header2 .nav-holder .nav-footer ul.nav > li > a {
-  color: black;
+  color: white;
+  background-color: rgba(0,0,0,0.15);
   font-size: 15px;
   border: none;
   padding: 0 14px;
 }
-
+#header2 .nav-holder .nav-footer ul.nav > li:hover a {
+    background-color: rgba(0,0,0,0.25);
+}
 
 /* ==============================
   9. Header Three styles
