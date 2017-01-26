@@ -315,10 +315,13 @@ jQuery(window).on('load', function () {
 	})(jQuery);
 });
 
+/* Se quita a solicitud del cliente
+/*
 // instance of fuction while Window Scroll event
 jQuery(window).on('scroll', function () {	
 	(function ($) {
 		stickyHeader();
 	})(jQuery);
 });
+*/
 
