@@ -555,9 +555,12 @@ de cada una de este tipo de servicios.</p>
 <script>
 	var ixx=0;
 	function changeImage(){
-		$("#photo"+ixx).fadeOut();
-		ixx=(ixx+1)%7;
-		$("#photo"+ixx).fadeIn();
+		$("#photo"+ixx).fadeOut(400, {
+      ixx=(ixx+1)%7;
+      $("#photo"+ixx).fadeIn();
+    });
+
+
 		setTimeout("changeImage()", 6000);
 	}
 	
