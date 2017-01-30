@@ -312,12 +312,12 @@ de cada una de este tipo de servicios.</p>
       <div class="col-md-4 hidden-sm">
         <div class="left-full-img" style="padding-top: 70px">
             <img src="/static/fotos/fotos/DSC01666.JPG" id="photo0" alt="Awesome Image">
-            <img src="/static/fotos/fotos/IMG_6867.JPG" id="photo1" style="display:none; alt="Awesome Image">
-			<img src="/static/fotos/fotos/3.jpeg" id="photo2" style="display:none; alt="Awesome Image">
-			<img src="/static/fotos/fotos/IMG_6884.JPG" id="photo3" style="display:none;" alt="Awesome Image">
-			<img src="/static/fotos/fotos/IMG_7728.JPG" id="photo4" style="display:none;" alt="Awesome Image">
-			<img src="/static/fotos/fotos/IMG_7744.JPG" id="photo5" style="display:none;" alt="Awesome Image">
-			<img src="/static/fotos/fotos/ruta.jpg" id="photo6" style="display:none;" alt="Awesome Image">
+            <img src="/static/fotos/fotos/IMG_6867.JPG" id="photo1" style="display:none;">
+	       		<img src="/static/fotos/fotos/3.jpeg" id="photo2" style="display:none;">
+			      <img src="/static/fotos/fotos/IMG_6884.JPG" id="photo3" style="display:none;">
+			      <img src="/static/fotos/fotos/IMG_7728.JPG" id="photo4" style="display:none;">
+			      <img src="/static/fotos/fotos/IMG_7744.JPG" id="photo5" style="display:none;">
+			      <img src="/static/fotos/fotos/ruta.jpg" id="photo6" style="display:none;">
         </div>
       </div>
     </div>
@@ -335,7 +335,7 @@ de cada una de este tipo de servicios.</p>
       <div class="col-md-5">
         <div class="call-to-action-text">
           <h3>Inversiones  <br>Easy Gruas S<any style=" text-transform: lowercase;">p</any>A</h3>
-          <p>es una Sociedad de inversiones, que se dedica al rubro de remolque de vehículos de cualquier tonelaje y a la mantención y reparación de éstos. Su misión es ejecutar, con los medios adecuados, el traslado de todo tipo de vehículos no operacionales que se encuentren detenidos por efectos de cualquier tipo de incidente o accidente, en las vías públicas o concesionadas de la ciudad de Santiago, haciendo uso de las tecnologías de la información y comunicación, como elemento de enlace con el conductor del vehículo siniestrado, el medio de remolque seleccionado y la central de comunicaciones de Easy Gruas SpA, asegurando puntualidad y seguridad en el traslado.
+          <p>es una Sociedad de inversiones, que se dedica al rubro de remolque de vehículos de cualquier tonelaje y a la mantención y reparación de éstos. Su misión es ejecutar, con los medios adecuados, el traslado de todo tipo de vehículos que se encuentren detenidos por efectos de cualquier tipo de incidente o accidente, en las vías públicas o concesionadas de la ciudad de Santiago, haciendo uso de las tecnologías de la información y comunicación, como elemento de enlace con el conductor del vehículo siniestrado, el medio de remolque seleccionado y la central de comunicaciones de Easy Gruas SpA, asegurando puntualidad y seguridad en el traslado.
           </p>
           <a onclick="goto('servicios')" class="thm-btn">Ver servicios<i class="fa fa-arrow-circle-right"></i></a>
         </div>
@@ -343,10 +343,6 @@ de cada una de este tipo de servicios.</p>
     </div>
   </div>
 </section>
-
-
-
-
 
 
 <section class="request-qoute sec-padding" id ="contactanos">
@@ -469,7 +465,7 @@ de cada una de este tipo de servicios.</p>
               <i class="fa fa-envelope-o"></i>
             </div>
             <div class="text-box">
-              <p>gclaretebal@easygruas.cl</p>
+              <p>contacto@easygruas.cl</p>
             </div>
           </li>
           <li>
@@ -559,9 +555,9 @@ de cada una de este tipo de servicios.</p>
 <script>
 	var ixx=0;
 	function changeImage(){
-		$("#photo"+ixx).hide('slow');
+		$("#photo"+ixx).fadeOut();
 		ixx=(ixx+1)%7;
-		$("#photo"+ixx).show('slow');
+		$("#photo"+ixx).fadeIn();
 		setTimeout("changeImage()", 6000);
 	}
 	
