@@ -231,7 +231,7 @@ function typed () {
 	if ($(".typed").length) {
 		$(".typed").typed({
 	        stringsElement: $('.typed-strings'),
-	        typeSpeed: 400,
+	        typeSpeed: 600,
 	        backDelay: 1500,
 	        loop: true,
 	        contentType: 'html', // or text
