@@ -1,51 +1,95 @@
 <!DOCTYPE html>
-<html >
+<html>
+
 <head>
   <meta charset="UTF-8">
   <title>Easy Gruas SPA</title>
   <!-- viewport meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- styles -->
+  <!-- STYLES -->
+
   <!-- helpers -->
-  <link rel="stylesheet" href="/static/plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/plugins/bootstrap/css/bootstrap.min.css">
   <!-- fontawesome css -->
-  <link rel="stylesheet" href="/static/plugins/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="static/plugins/font-awesome/css/font-awesome.min.css">
   <!-- strock gap icons -->
-  <link rel="stylesheet" href="/static/plugins/Stroke-Gap-Icons-Webfont/style.css">
+  <link rel="stylesheet" href="static/plugins/Stroke-Gap-Icons-Webfont/style.css">
   <!-- revolution slider css -->
-  <link rel="stylesheet" href="/static/plugins/revolution/css/settings.css">
-  <link rel="stylesheet" href="/static/plugins/revolution/css/layers.css">
-  <link rel="stylesheet" href="/static/plugins/revolution/css/navigation.css">
+  <link rel="stylesheet" href="static/plugins/revolution/css/settings.css">
+  <link rel="stylesheet" href="static/plugins/revolution/css/layers.css">
+  <link rel="stylesheet" href="static/plugins/revolution/css/navigation.css">
   <!-- flaticon css -->
-  <link rel="stylesheet" href="/static/plugins/flaticon/flaticon.css">
+  <link rel="stylesheet" href="static/plugins/flaticon/flaticon.css">
   <!-- jQuery ui css -->
-  <link href="/static/plugins/jquery-ui-1.11.4/jquery-ui.css" rel="stylesheet">
+  <link rel="stylesheet" href="static/plugins/jquery-ui-1.11.4/jquery-ui.css">
   <!-- owl carousel css -->
-  <link rel="stylesheet" href="/static/plugins/owl.carousel-2/assets/owl.carousel.css">
-  <link rel="stylesheet" href="/static/plugins/owl.carousel-2/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="static/plugins/owl.carousel-2/assets/owl.carousel.css">
+  <link rel="stylesheet" href="static/plugins/owl.carousel-2/assets/owl.theme.default.min.css">
   <!-- animate css -->
-  <link rel="stylesheet" href="/static/plugins/animate.min.css">
+  <link rel="stylesheet" href="static/plugins/animate.min.css">
   <!-- fancybox -->
-  <link rel="stylesheet" href="/static/plugins/fancyapps-fancyBox/source/jquery.fancybox.css">
+  <link rel="stylesheet" href="static/plugins/fancyapps-fancyBox/source/jquery.fancybox.css">
 
 
   <!-- master stylesheet -->
-  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="stylesheet" href="static/css/style.css">
   <!-- responsive stylesheet -->
-  <link rel="stylesheet" href="/static/css/responsive.css">
-    <link rel="stylesheet" href="/static/owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="static/css/responsive.css">
+  <link rel="stylesheet" href="static/owl-carousel/owl.carousel.css">
 
+  <!-- SCRIPTS -->
 
+  <!-- jQuery js -->
+  <script src="static/plugins/jquery/jquery-1.11.3.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="static/plugins/bootstrap/js/bootstrap.min.js"></script>
+  <!-- jQuery ui js -->
+  <script src="static/plugins/jquery-ui-1.11.4/jquery-ui.js"></script>
+  <!-- owl carousel js -->
+  <script src="static/plugins/owl.carousel-2/owl.carousel.min.js"></script>
+  <!-- jQuery appear -->
+  <script src="static/plugins/jquery-appear/jquery.appear.js"></script>
+  <!-- jQuery countTo -->
+  <script src="static/plugins/jquery-countTo/jquery.countTo.js"></script>
+  <!-- jQuery validation -->
+  <script src="static/plugins/jquery-validation/dist/jquery.validate.min.js"></script>
 
+  <!-- gmap.js -->
+  <script src="static/plugins/gmap.js"></script>
+  <!-- mixit up -->
+  <script src="static/plugins/jquery.mixitup.min.js"></script>
+
+  <!-- revolution slider js -->
+  <script src="static/plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
+  <script src="static/plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
+  <script src="static/plugins/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+  <script src="static/plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+  <script src="static/plugins/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+  <script src="static/plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+  <script src="static/plugins/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+  <script src="static/plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+  <script src="static/plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+  <script src="static/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+  <script src="static/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
+  <script src="static/owl-carousel/owl.carousel.js"></script>
+
+  <!-- fancy box -->
+  <script src="static/plugins/fancyapps-fancyBox/source/jquery.fancybox.pack.js"></script>
+  <!-- type script -->
+  <!--<script src="static/plugins/typed.js-master/dist/typed.min.js"></script>-->
+
+  <!-- theme custom js  -->
+  <script src="static/js/main.js"></script>
 
 </head>
+
 <body>
 
 <header id="header2" class="clearfix stricky">
   <div class="logo pull-left">
     <a href="layout.html">
-      <img src="/static/fotos/logo.png" alt="">
+      <img src="static/fotos/logo.png" alt="">
     </a>
   </div>
   <div class="nav-holder pull-right">
@@ -55,20 +99,17 @@
     <div class="nav-footer">
       <ul class="nav">
         <li >
-          <a onclick="goto('inicio')">Inicio</a>
-
+          <a onclick="navigateTo('inicio')">Inicio</a>
         </li>
         <li >
-          <a onclick="goto('empresa')">Empresa</a>
-
+          <a onclick="navigateTo('empresa')">Empresa</a>
         </li>
         <li>
-          <a onclick="goto('servicios')">Servicios</a>
-
+          <a onclick="navigateTo('servicios')">Servicios</a>
         </li>
 
 
-        <li><a onclick="goto('contactanos')">Contacto</a></li>
+        <li><a onclick="navigateTo('contactanos')">Contacto</a></li>
       </ul>
     </div>
   </div>
@@ -76,33 +117,29 @@
 
 
 
-<section id ="inicio"  class="text-rotator-banner thm-banner-wrapper" style="background-image: url(static/fotos/newimg.png);">
+<section id ="inicio" class="text-rotator-banner thm-banner-wrapper" style="background-image: url(static/fotos/newimg.png);">
   <div class="thm-container">
     <div class="col-lg-6 col-md-8 pull-right caption-wrapper">
       <div class="caption-h1">
 
         <div class="type-wrap">
-             <p style="  text-transform: uppercase; font-style: italic; text-shadow: 2px 0 0 #000, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;">Easy Gruas</p>
-          <div class="typed-strings" >
-
-
-            <p >Remolque de vehículos </p>
-              <p >Asistencia en ruta</p>
-              <p >Traslado de maquinaria liviana</p>
-
-
-
-
+          <p style="text-transform: uppercase; font-style: italic; text-shadow: 2px 0 0 #000, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;">
+            Easy Gruas
+          </p>
+          <div id="subtitle-holder">
+            <p id="subtitle-0">Remolque de vehículos</p>
+            <p id="subtitle-1" style="display: none">Asistencia en ruta</p>
+            <p id="subtitle-2" style="display: none">Traslado de maquinaria liviana</p>
           </div>
-          <span class="typed"></span>
-        </div><br>
+        </div>
+        <br>
       </div>
       <span class="horiz-border"></span>
       <div class="caption-p">
         Coordinando los mejores vehículos de remolque, personal especializado y la tecnología de la información y comunicación  para un eficiente servicio en la ruta.
       </div>
-      <a onclick="goto('contactanos')" class="thm-btn">Contactanos <i class="fa fa-arrow-right"></i></a> &emsp;
-      <a onclick="goto('servicios')" class="thm-btn">Ver servicios <i class="fa fa-arrow-right"></i></a>
+      <a onclick="navigateTo('contactanos')" class="thm-btn">Contactanos <i class="fa fa-arrow-right"></i></a> &emsp;
+      <a onclick="navigateTo('servicios')" class="thm-btn">Ver servicios <i class="fa fa-arrow-right"></i></a>
     </div>
   </div>
 </section>
@@ -114,7 +151,8 @@
       <h3>Inversiones  <br>Easy Gruas SpA</h3>
     </div>
     <div class="text-box">
-      <p align="justify" >es una Sociedad de inversiones, que se dedica al rubro de remolque de vehículos de cualquier tonelaje y a la mantención y reparación de éstos. Su misión es ejecutar, con los medios adecuados, el traslado de todo tipo de vehículos que se encuentren detenidos por efectos de cualquier tipo de incidente o accidente, en las vías públicas o concesionadas de la ciudad de Santiago, haciendo uso de las tecnologías de la información y comunicación, como elemento de enlace con el conductor del vehículo siniestrado, el medio de remolque seleccionado y la central de comunicaciones de Easy Gruas SpA, asegurando puntualidad y seguridad en el traslado</p>
+      <p align="justify" >
+      Es una Sociedad de inversiones, que se dedica al rubro de remolque de vehículos de cualquier tonelaje y a la mantención y reparación de éstos. Su misión es ejecutar, con los medios adecuados, el traslado de todo tipo de vehículos que se encuentren detenidos por efectos de cualquier tipo de incidente o accidente, en las vías públicas o concesionadas de la ciudad de Santiago, haciendo uso de las tecnologías de la información y comunicación, como elemento de enlace con el conductor del vehículo siniestrado, el medio de remolque seleccionado y la central de comunicaciones de Easy Gruas SpA, asegurando puntualidad y seguridad en el traslado</p>
     </div>
   </div>
 </section>
@@ -132,41 +170,76 @@
             <div class="accrodion-content" id="remolque">
               <div class="img-caption">
                 <div class="img-box">
-                  <img src="/static/fotos/ruta.JPG" alt="Awesome Image"/>
+                  <img src="static/fotos/ruta.JPG" alt="Ruta	"/>
                 </div>
                 <div class="content-box">
-                  <h4>Remolque de vehículos livianos, medianos y pesados.</h4>
+                  <h4>Traslado de vehículos livianos y medianos.</h4>
                   <p>Haciendo uso de vehículos adecuados para cada uno de los casos, evaluado por una patrulla que emite el informe correspondiente para la asignación de los medios de acuerdo a volumen, peso y ubicación.</p>
-
                 </div>
               </div>
             </div>
           </div>
-          <div class="accrodion active" id="asistencia">
 
+          <div class="accrodion active" id="traslado-siniestrados">
             <div class="accrodion-content">
               <div class="img-caption">
                 <div class="img-box">
-                  <img src="/static/fotos/vol.JPG" alt="Awesome Image"/>
+                  <img src="static/fotos/vol.JPG" alt="Vol"/>
+                </div>
+                <div class="content-box">
+                  <h4>Traslado de Vehículos Siniestrados</h4>
+                  <p>
+                    A la fecha prestamos servicios a la Compañía Mapfre Sur Asistencia y la empresa RAC (Ruta &amp; Asistencia Club) en el rescate, traslado y custodia de vehículos siniestrados.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="accrodion active" id="traslado-pesados">
+            <div class="accrodion-content">
+              <div class="img-caption">
+                <div class="img-box">
+                  <img src="static/fotos/vol.JPG" alt="Vol"/>
+                </div>
+                <div class="content-box">
+                  <h4>Traslado y Rescate de Vehículos Pesados</h4>
+                  <p>
+                    Tenemos la capacidad de efectuar rescate y traslado de buses, camiones, trailers y maquinaria pesada.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accrodion active" id="asistencia">
+            <div class="accrodion-content">
+              <div class="img-caption">
+                <div class="img-box">
+                  <img src="static/fotos/vol.JPG" alt="Vol"/>
                 </div>
                 <div class="content-box">
                   <h4>Asistencia en ruta</h4>
-                  <p>Contamos con los medios y personal adecuados para materializar una rápida y eficiente asistencia en ruta ante casos de fallas mecánicas de nivel primario.</p>
-
+                  <p>
+                    Contamos con los medios y personal adecuados para materializar una rápida y eficiente asistencia en ruta ante casos de fallas mecánicas de nivel primario.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="accrodion active" id="transalado">
 
+          <div class="accrodion active" id="traslado">
             <div class="accrodion-content">
               <div class="img-caption">
                 <div class="img-box">
-                  <img src="/static/fotos/maquinaria.JPG" alt="Awesome Image"/>
+                  <img src="static/fotos/maquinaria.JPG" alt="Awesome Image"/>
                 </div>
                 <div class="content-box">
                   <h4>Traslado de maquinaria liviana</h4>
-                  <p>A cualquier destino dentro del País, con medios terrestres adecuados, con conductores de experiencia con tarifas convenientes y considerando además seguro de carga.</p>
+                  <p>
+                    A cualquier destino dentro del País, con medios terrestres adecuados, con conductores de experiencia con tarifas convenientes y considerando además seguro de carga.
+                  </p>
 
                 </div>
               </div>
@@ -177,7 +250,7 @@
             <div class="accrodion-content">
               <div class="img-caption">
                 <div class="img-box">
-                  <img src="/static/images/accrodion/1.jpg" alt="Awesome Image"/>
+                  <img src="static/images/accrodion/1.jpg" alt="Awesome Image"/>
                 </div>
                 <div class="content-box">
                   <h4>Capacitación permanente de nuestro personal</h4>
@@ -199,29 +272,25 @@
   height="300"
   frameborder="0" style="border:0"
   src="https://www.google.com/maps/embed/v1/place?q=irarrazaval+5185+ñuñoa+chile&key=AIzaSyDm4lJ6XOatxJt_L8Y1T2STBSAkLx6EboA" allowfullscreen>
-</iframe>
-
-
-              </div>
+          </iframe>
+        </div>
         <br>
-              <div class="text-box">
-                <p><b>  <i class="fa fa-map-marker"></i> Ubicación.</b> <br> Avenida Irarrázaval 5185 oficina 702</p>
-              </div>
-
-
+        <div class="text-box">
+          <p><b>  <i class="fa fa-map-marker"></i> Ubicación.</b> <br> Avenida Irarrázaval 5185 oficina 702</p>
+        </div>
 
         <p> <i class="fa fa-phone"></i> +56 2 32705814</p>
 
 
-                <p><i class="fa fa-envelope-o"></i> gclaretebal@easygruas.cl</p>
+        <p><i class="fa fa-envelope-o"></i> gclaretebal@easygruas.cl</p>
 
 
-              <div class="text-box">
-                <p> <i class="icon icon-Timer"></i> Lunes  - Domingo : 24/7</p>
-              </div>
+        <div class="text-box">
+          <p> <i class="icon icon-Timer"></i> Lunes  - Domingo : 24/7</p>
+        </div>
 
 
-          <a href="https://www.google.cl/maps/place/Irarrázaval+5185,+Ñuñoa,+Región+Metropolitana/@-33.4543027,-70.5771567,18z/data=!4m13!1m7!3m6!1s0x9662cfb56daaf5b5:0x590d68484855bd20!2zSXJhcnLDoXphdmFsIDUxODUsIMORdcOxb2EsIFJlZ2nDs24gTWV0cm9wb2xpdGFuYQ!3b1!8m2!3d-33.4542467!4d-70.5760608!3m4!1s0x9662cfb56daaf5b5:0x590d68484855bd20!8m2!3d-33.4542467!4d-70.5760608">Abrir en Google Maps</a>
+        <a href="https://www.google.cl/maps/place/Irarrázaval+5185,+Ñuñoa,+Región+Metropolitana/@-33.4543027,-70.5771567,18z/data=!4m13!1m7!3m6!1s0x9662cfb56daaf5b5:0x590d68484855bd20!2zSXJhcnLDoXphdmFsIDUxODUsIMORdcOxb2EsIFJlZ2nDs24gTWV0cm9wb2xpdGFuYQ!3b1!8m2!3d-33.4542467!4d-70.5760608!3m4!1s0x9662cfb56daaf5b5:0x590d68484855bd20!8m2!3d-33.4542467!4d-70.5760608">Abrir en Google Maps</a>
         </div>
       </div>
     </div>
@@ -280,11 +349,8 @@ nuestros clientes.</p>
             </header>
             <article>
               <p>La eficiencia de los servicios ofrecidos por nuestra empresa, está basada en
-
 valores, principios y políticas entre las cuales se consideran la permanente
-
 capacitación de nuestro personal en diversas técnicas de rescate y asistencia de
-
 vehículos siniestrados.</p>
             </article>
           </div>
@@ -301,9 +367,7 @@ vehículos siniestrados.</p>
             </header>
             <article>
               <p>Hemos implementado el sistema de seguro para todas nuestras cargas especiales, de tal
-
 modo de brindar una cobertura contra daños causados durante el traslado y la manipulación
-
 de cada una de este tipo de servicios.</p>
             </article>
           </div>
@@ -311,13 +375,13 @@ de cada una de este tipo de servicios.</p>
       </div>
       <div class="col-md-4 hidden-sm">
         <div class="left-full-img" style="padding-top: 70px">
-            <img src="/static/fotos/fotos/DSC01666.JPG" id="photo0" alt="Awesome Image">
-            <img src="/static/fotos/fotos/IMG_6867.JPG" id="photo1" style="display:none; alt="Awesome Image">
-			<img src="/static/fotos/fotos/3.jpeg" id="photo2" style="display:none; alt="Awesome Image">
-			<img src="/static/fotos/fotos/IMG_6884.JPG" id="photo3" style="display:none;" alt="Awesome Image">
-			<img src="/static/fotos/fotos/IMG_7728.JPG" id="photo4" style="display:none;" alt="Awesome Image">
-			<img src="/static/fotos/fotos/IMG_7744.JPG" id="photo5" style="display:none;" alt="Awesome Image">
-			<img src="/static/fotos/fotos/ruta.jpg" id="photo6" style="display:none;" alt="Awesome Image">
+            <img src="static/fotos/fotos/DSC01666.JPG" id="photo0" alt="Awesome Image">
+            <img src="static/fotos/fotos/IMG_6867.JPG" id="photo1" style="display:none; alt="Awesome Image">
+			<img src="static/fotos/fotos/3.jpeg" id="photo2" style="display:none; alt="Awesome Image">
+			<img src="static/fotos/fotos/IMG_6884.JPG" id="photo3" style="display:none;" alt="Awesome Image">
+			<img src="static/fotos/fotos/IMG_7728.JPG" id="photo4" style="display:none;" alt="Awesome Image">
+			<img src="static/fotos/fotos/IMG_7744.JPG" id="photo5" style="display:none;" alt="Awesome Image">
+			<img src="static/fotos/fotos/ruta.jpg" id="photo6" style="display:none;" alt="Awesome Image">
         </div>
       </div>
     </div>
@@ -329,7 +393,7 @@ de cada una de este tipo de servicios.</p>
     <div class="row">
       <div class="col-md-7 hidden-xs hidden-sm">
         <div class="right-full-image" style="padding-top: 40px">
-          <img src="/static/fotos/Imagen5.png" style="width :675px" alt="Awesome Image"/>
+          <img src="static/fotos/Imagen5.png" style="width :675px" alt="Image"/>
         </div>
       </div>
       <div class="col-md-5">
@@ -337,7 +401,7 @@ de cada una de este tipo de servicios.</p>
           <h3>Inversiones  <br>Easy Gruas S<any style=" text-transform: lowercase;">p</any>A</h3>
           <p>es una Sociedad de inversiones, que se dedica al rubro de remolque de vehículos de cualquier tonelaje y a la mantención y reparación de éstos. Su misión es ejecutar, con los medios adecuados, el traslado de todo tipo de vehículos no operacionales que se encuentren detenidos por efectos de cualquier tipo de incidente o accidente, en las vías públicas o concesionadas de la ciudad de Santiago, haciendo uso de las tecnologías de la información y comunicación, como elemento de enlace con el conductor del vehículo siniestrado, el medio de remolque seleccionado y la central de comunicaciones de Easy Gruas SpA, asegurando puntualidad y seguridad en el traslado.
           </p>
-          <a onclick="goto('servicios')" class="thm-btn">Ver servicios<i class="fa fa-arrow-circle-right"></i></a>
+          <a onclick="navigateTo('servicios')" class="thm-btn">Ver servicios<i class="fa fa-arrow-circle-right"></i></a>
         </div>
       </div>
     </div>
@@ -358,12 +422,11 @@ de cada una de este tipo de servicios.</p>
           <h2><span>Contactanos</span></h2>
         </div>
 
-         <div  id="ContactForm2" class="contact-form" style="display:none">
-<div class="form-grp full">
-              <h4> Correo enviado</h4>
-            </div>
-
- </div>
+        <div  id="ContactForm2" class="contact-form" style="display:none">
+          <div class="form-grp full">
+            <h4> Correo enviado</h4>
+          </div>
+        </div>
 
         <div  id="ContactForm" class="contact-form">
           <div class="form-grp full">
@@ -384,19 +447,14 @@ de cada una de este tipo de servicios.</p>
         </div>
       </div>
 
-
-
-
-
-        <div class="col-md-6">
-
-            <iframe
+      <div class="col-md-6">
+        <iframe
   width="500"
   height="500"
   frameborder="0" style="border:0"
   src="https://www.google.com/maps/embed/v1/place?q=irarrazaval+5185+ñuñoa+chile&key=AIzaSyDm4lJ6XOatxJt_L8Y1T2STBSAkLx6EboA" allowfullscreen>
-</iframe>
-            </div>
+        </iframe>
+      </div>
     </div>
   </div>
 </section>
@@ -408,7 +466,7 @@ de cada una de este tipo de servicios.</p>
     <div class="row">
       <div class="col-md-3 col-sm-6 footer-widget">
         <div class="about-widget">
-          <a href="#"><img src="/static/fotos/logo.png" alt="Awesome Image"/></a>
+          <a href="#"><img src="static/fotos/logo.png" alt="Logo"/></a>
           <p>Sociedad de inversiones, que se dedica al rubro de remolque de vehículos.</p>
           <a href="#">Leer Más <i class="fa fa-angle-double-right"></i></a>
           <ul class="social">
@@ -425,9 +483,9 @@ de cada una de este tipo de servicios.</p>
             <h3><span>Nuestros Servicios</span></h3>
           </div>
           <ul class="link-list">
-            <li><a onclick="goto('remolque')">Remolque de vehículos</a></li>
-            <li><a onclick="goto('asistencia')">Asistencia en ruta</a></li>
-            <li><a onclick="goto('tansalado')">Traslado de maquinaria liviana</a></li>
+            <li><a onclick="navigateTo('remolque')">Remolque de vehículos</a></li>
+            <li><a onclick="navigateTo('asistencia')">Asistencia en ruta</a></li>
+            <li><a onclick="navigateTo('tansalado')">Traslado de maquinaria liviana</a></li>
 
           </ul>
         </div>
@@ -437,10 +495,10 @@ de cada una de este tipo de servicios.</p>
           <h3><span>Secciones</span></h3>
         </div>
         <ul class="link-list">
-          <li><a onclick="goto('inicio')">Inicio</a></li>
-          <li><a onclick="goto('servicios')">Servicios</a></li>
-          <li><a onclick="goto('nosotros')">Nosotros</a></li>
-          <li><a onclick="goto('contactanos')">Contactanos</a></li>
+          <li><a onclick="navigateTo('inicio')">Inicio</a></li>
+          <li><a onclick="navigateTo('servicios')">Servicios</a></li>
+          <li><a onclick="navigateTo('nosotros')">Nosotros</a></li>
+          <li><a onclick="navigateTo('contactanos')">Contactanos</a></li>
         </ul>
       </div>
       <div class="col-md-4 col-sm-6 footer-widget">
@@ -498,88 +556,49 @@ de cada una de este tipo de servicios.</p>
 </section>
 
 
-<!-- jQuery js -->
-<script src="/static/plugins/jquery/jquery-1.11.3.min.js"></script>
-<!-- bootstrap js -->
-<script src="/static/plugins/bootstrap/js/bootstrap.min.js"></script>
-<!-- jQuery ui js -->
-<script src="/static/plugins/jquery-ui-1.11.4/jquery-ui.js"></script>
-<!-- owl carousel js -->
-<script src="/static/plugins/owl.carousel-2/owl.carousel.min.js"></script>
-<!-- jQuery appear -->
-<script src="/static/plugins/jquery-appear/jquery.appear.js"></script>
-<!-- jQuery countTo -->
-<script src="/static/plugins/jquery-countTo/jquery.countTo.js"></script>
-<!-- jQuery validation -->
-<script src="/static/plugins/jquery-validation/dist/jquery.validate.min.js"></script>
-
-<!-- gmap.js -->
-<script src="/static/plugins/gmap.js"></script>
-<!-- mixit up -->
-<script src="/static/plugins/jquery.mixitup.min.js"></script>
-
-<!-- revolution slider js -->
-<script src="/static/plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
-<script src="/static/plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
-<script src="/static/plugins/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-<script src="/static/plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-<script src="/static/plugins/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-<script src="/static/plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script src="/static/plugins/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-<script src="/static/plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-<script src="/static/plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-<script src="/static/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script src="/static/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
-<script src="/static/owl-carousel/owl.carousel.js"></script>
-
-<!-- fancy box -->
-<script src="/static/plugins/fancyapps-fancyBox/source/jquery.fancybox.pack.js"></script>
-<!-- type script -->
-<script src="/static/plugins/typed.js-master/dist/typed.min.js"></script>
-
-<!-- theme custom js  -->
-<script src="/static/js/main.js"></script>
-
-
 <script>
+    let currentPhoto = 0;
+    let currentSubtitle = 0;
 
+    function changeImage() {
+        $("#photo" + currentPhoto).hide('slow');
+        currentPhoto = (currentPhoto + 1) % 7;
+        $("#photo" + currentPhoto).show('slow');
 
-    goto = function(id) {
-        var offset = -65; //Offset of 20px
-
-        $('html, body').animate({
-            scrollTop: $("#" + id).offset().top + offset
-        }, 2000);
-
+        setTimeout("changeImage()", 4000);
     }
 
+    function scrollSubtitle() {
+      $('#subtitle-' + currentSubtitle).hide('slow');
+      currentSubtitle = (currentSubtitle + 1) % 3;
+      $('#subtitle-' + currentSubtitle).show('slow');
 
-</script>
+      setTimeout('scrollSubtitle()', 2000);
+    }
 
-<script>
-	var ixx=0;
-	function changeImage(){
-		$("#photo"+ixx).hide('slow');
-		ixx=(ixx+1)%7;
-		$("#photo"+ixx).show('slow');
-		setTimeout("changeImage()", 6000);
-	}
-	
-	changeImage();
+    changeImage();
+    setTimeout('scrollSubtitle()', 2000);
 
-	$( "#enviar" ).click(function() {
-		nombre=$("#name").val()
-		email=$("#email").val()
-		asunto=$("#subject").val()
-		texto=$("#message").val()+"\n Nombre: "+nombre
-		data={email:email,text:texto,asunto:asunto}
-		$("#ContactForm").hide('slow')
-		$("#ContactForm2").show('slow')
-		$.post( "http://api.easygruas.cl/",data, function( data ) {
-			console.log(data)
-		});
-	} );
+    $("#enviar").click(function() {
+        nombre = $("#name").val()
+        email = $("#email").val()
+        asunto = $("#subject").val()
+        texto = $("#message").val()+"\nNombre: " + nombre
+        data = {email:email, ext:texto, asunto:asunto}
+        $("#ContactForm").hide('slow')
+        $("#ContactForm2").show('slow')
+        $.post( "http://api.easygruas.cl/", data, function(data) {
+            console.log(data)
+        });
+    });
 
+    function navigateTo(id) {
+      var offset = -65; //Offset of 20px
+
+      $('html, body').animate({
+        scrollTop: $("#" + id).offset().top + offset
+      }, 2000);
+    }
 </script>
 
 </body>
