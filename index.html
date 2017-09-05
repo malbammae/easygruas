@@ -373,14 +373,19 @@ de cada una de este tipo de servicios.</p>
         </div>
       </div>
       <div class="col-md-4 hidden-sm">
-        <div class="left-full-img" style="padding-top: 70px">
-            <img src="static/fotos/fotos/DSC01666.JPG" id="photo0" alt="Awesome Image">
-            <img src="static/fotos/fotos/IMG_6867.JPG" id="photo1" style="display:none;">
-	       		<img src="static/fotos/fotos/3.jpeg" id="photo2" style="display:none;">
-			      <img src="static/fotos/fotos/IMG_6884.JPG" id="photo3" style="display:none;">
-			      <img src="static/fotos/fotos/IMG_7728.JPG" id="photo4" style="display:none;">
-			      <img src="static/fotos/fotos/IMG_7744.JPG" id="photo5" style="display:none;">
-			      <img src="static/fotos/fotos/ruta.jpg" id="photo6" style="display:none;">
+        <div class="left-full-img" style="padding-top: 50px; height:523px;">
+          <img src="static/fotos/carrusel/a.jpg" id="photo0">
+          <img src="static/fotos/carrusel/b.jpg" id="photo1" style="display:none;">
+          <img src="static/fotos/carrusel/c.jpg" id="photo2" alt="" style="display:none;">
+          <img src="static/fotos/carrusel/d.jpg" id="photo3" alt="" style="display:none;">
+          <img src="static/fotos/carrusel/e.jpg" id="photo4" alt="" style="display:none;">
+          <img src="static/fotos/carrusel/f.jpg" id="photo5" alt="" style="display:none;">
+          <img src="static/fotos/carrusel/g.jpg" id="photo6" alt="" style="display:none;">
+          <img src="static/fotos/carrusel/h.jpg" id="photo7" alt="" style="display:none;">
+          <img src="static/fotos/carrusel/i.jpg" id="photo8" alt="" style="display:none;">
+          <img src="static/fotos/carrusel/j.jpg" id="photo9" alt="" style="display:none;">
+          <img src="static/fotos/carrusel/k.jpg" id="photo10" alt="" style="display:none;">
+          <img src="static/fotos/carrusel/l.jpg" id="photo11" alt="" style="display:none;">
         </div>
       </div>
     </div>
@@ -557,7 +562,7 @@ de cada una de este tipo de servicios.</p>
     function changeImage() {
         $("#photo" + currentPhoto).hide('slow');
         currentPhoto = (currentPhoto + 1) % 7;
-        $("#photo" + currentPhoto).show('slow');
+        $("#photo" + currentPhoto).fadeIn();
 
         setTimeout("changeImage()", 4000);
     }
